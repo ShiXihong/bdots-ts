@@ -1,5 +1,5 @@
 # bdots-ts
-my blog site
+my blog site with react typescript
 
 base create-react-app
 
