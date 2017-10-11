@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { withRouter } from 'react-router-dom';
 
 import Routes from '../route/routes';
 import Header from '../components/header';
@@ -6,6 +7,7 @@ import Footer from '../components/footer';
 
 const style = require('../scss/app.scss');
 
+@withRouter
 export default class App extends React.Component<any, any> {
 
     constructor(props: {}) {
@@ -40,15 +42,15 @@ export default class App extends React.Component<any, any> {
             updateUserToken: this.updateUserToken,
         };
 
-        return !this.state.isLoadingUserToken
-            && (
-                <div className={style.app}>
-                    <Header key="web-header"/>
-                    <main key="web-main" className={style.content}>
-                        <Routes childProps={childProps}/>
-                    </main>
-                    <Footer key="web-footer"/>
-                </div>
-            );
+        return (
+            !this.state.isLoadingUserToken &&
+            <div className={style.app} >
+                <Header key="web-header"/>
+                <main key="web-main" className={style.content}>
+                    <Routes childProps={childProps}/>
+                </main>
+                <Footer key="web-footer"/>
+            </div>
+        );
     }
 }

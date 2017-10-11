@@ -1,6 +1,6 @@
 {
-  "name": "react-ts-test",
-  "version": "0.1.0",
+  "name": "BDots",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "promise": "8.0.1",

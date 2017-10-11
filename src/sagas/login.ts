@@ -1,6 +1,5 @@
 import { takeEvery } from 'redux-saga/effects';
 
-
 function* submitData(action: any) {
     try {
         //
