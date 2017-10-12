@@ -1,0 +1,28 @@
+@import "./sass-variable.scss";
+
+.home{
+  width: 100%;
+  .banner{
+    @include display-flex(column, nowrap, stretch, center, center);
+    flex: 1;
+    max-height: $banner-max-height;
+    padding: 50px 0 30px 0;
+    background: url("../resources/img/home-banner.png") no-repeat top center $banner-bg-color;
+
+    h1,p{
+      color: #fff;
+      @include clear-margin-padding;
+    }
+
+    h1{
+      font-size: 5rem;
+    }
+
+    p{
+      font-size: 1.2rem;
+    }
+  }
+  .content{
+    @include content-size;
+  }
+}

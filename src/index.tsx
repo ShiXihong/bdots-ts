@@ -27,7 +27,7 @@ addLocaleData([...en, ...zh]);
 
 import(`./i18n/${oLang.lang}.json`).then((module: any) => {
     ReactDOM.render(
-        <IntlProvider locale={oLang.local} messages={module.default}>
+        <IntlProvider locale={oLang.local} messages={module}>
             <Provider store={store}>
                 <Router>
                     <App />

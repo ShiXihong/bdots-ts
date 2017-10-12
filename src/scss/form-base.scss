@@ -1,4 +1,4 @@
-@import "sass-variable";
+@import "./sass-variable.scss";
 
 .form-base {
   @include display-flex(row, wrap, center, center, flex-start);

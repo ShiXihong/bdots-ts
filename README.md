@@ -12,3 +12,6 @@ npm start or yarn start
 npm install or yarn add
 
 npm build or yarn build
+
+# LICENSE
+[MIT](./LICENSE)

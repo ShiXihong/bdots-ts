@@ -13,7 +13,12 @@ $footer-border-top-color: rgb(0, 188, 212);
 $footer-border-top-color-2: #333;
 $footer-font-size: 0.75rem;
 
-$max-width: 80rem;
+$banner-bg-color: #5CACEE;
+$banner-max-height: 20rem;
+
+$text-color: #999;
+
+$max-width: 60rem;
 
 $header-1-color: rgb(0, 188, 212);
 $header-1-font-size: 1.2rem;
@@ -27,6 +32,11 @@ $header-1-font-size: 1.2rem;
   align-content:$align-content;
 }
 
+@mixin clear-margin-padding(){
+  margin: 0;
+  padding: 0;
+}
+
 @mixin border-radios($border-radios){
   border-radius: $border-radios;
 }
@@ -34,4 +44,10 @@ $header-1-font-size: 1.2rem;
 @mixin header1() {
   color: $header-1-color;
   font-size: $header-1-font-size;
+}
+
+@mixin content-size(){
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
 }

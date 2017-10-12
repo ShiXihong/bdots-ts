@@ -1,4 +1,4 @@
-@import "./sass-variable.scss";
+@import "./global.scss";
 
 .app{
   display: flex;
@@ -7,10 +7,9 @@
   align-items: center;
 
   .content{
-    max-width: $max-width;
-    margin: 0 auto;
-    padding: 60px 10px 10px 10px;
     flex: 1;
-    @include display-flex(column, nowrap, center, stretch, stretch);
+    @include display-flex(column, nowrap, stretch, stretch, stretch);
+    width: 100%;
+    margin-top: 38px;
   }
 }
